@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="202.0" prefWidth="556.0" style="-fx-background-color: #f4fff4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlPackage.MainWindowController">
+   <children>
+      <Label layoutX="29.0" layoutY="23.0" prefHeight="70.0" prefWidth="452.0" text="Dechipher the Cube" textFill="#165710" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="11.0">
+         <font>
+            <Font name="Showcard Gothic" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="SolverBtn" layoutX="152.0" layoutY="115.0" mnemonicParsing="false" onAction="#SolverBtn_Action" prefHeight="51.0" prefWidth="103.0" style="-fx-background-radius: 5 5 5 5;" text="PLAY" textFill="#175710">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="AboutBtn" layoutX="287.0" layoutY="115.0" mnemonicParsing="false" onAction="#AboutBtn_Action" style="-fx-background-radius: 5 5 5 5;" text="ABOUT" textFill="#175710">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

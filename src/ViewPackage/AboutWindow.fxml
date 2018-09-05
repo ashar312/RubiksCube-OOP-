@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="761.0" style="-fx-background-color: #F4FFF4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ControlPackage.AboutWindowController">
+   <children>
+      <Label layoutX="275.0" text="ABOUT US" textFill="#175710">
+         <font>
+            <Font name="Showcard Gothic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="85.0" text="Version 1.0 ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="111.0" prefHeight="27.0" prefWidth="746.0" text="Decipher-the-cube is a free and open source program made by the students of UBIT, University of Karachi." />
+      <Label layoutX="14.0" layoutY="133.0" text="This program uses the color input from the user's 3x3x3 rubik's cube on a 2D figure, and show the steps to follow to solve the rubik's cube." />
+      <Label layoutX="16.0" layoutY="164.0" text="Authors: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="216.0" text="Ashar Ashfaque" />
+      <Label layoutX="18.0" layoutY="197.0" text="Ahsun Iqbal" />
+      <Label layoutX="16.0" layoutY="237.0" text="Hunain Ali" />
+      <Label layoutX="16.0" layoutY="256.0" text="Mohammad Ahmed Akber Meghani" />
+   </children>
+</AnchorPane>

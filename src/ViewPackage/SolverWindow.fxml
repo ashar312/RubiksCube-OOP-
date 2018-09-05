@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="634.0" style="-fx-background-color: #F4FFF4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlPackage.SolverGreenWindowController">
+   <children>
+      <Label layoutX="88.0" layoutY="13.0" text="Decipher the Cube" textFill="#175710">
+         <font>
+            <Font name="Showcard Gothic" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btn0" layoutX="55.0" layoutY="220.0" mnemonicParsing="false" onAction="#Btn0_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Label fx:id="EnterColors_Label" layoutX="29.0" layoutY="85.0" text="Enter Colors for Green Side" textFill="#175710">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Instruction_Label" layoutX="317.0" layoutY="88.0" text="Instructions for Green Side:" textFill="#175710">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="FirstInstruction_Label" layoutX="317.0" layoutY="120.0" text="1. Green side should be on the front." textFill="#175710" />
+      <Label fx:id="SecondInstruction_Label" layoutX="317.0" layoutY="146.0" text="2. White side should be on your right." textFill="#175710" />
+      <Separator layoutX="294.0" layoutY="85.0" orientation="VERTICAL" prefHeight="576.0" prefWidth="10.0" />
+      <Button fx:id="NextBtn" layoutX="54.0" layoutY="392.0" mnemonicParsing="false" onAction="#NextBtn_Action" text="Next Face" textFill="#175710" />
+      <Button fx:id="PreviousBtn" layoutX="132.0" layoutY="392.0" mnemonicParsing="false" onAction="#PreviousBtn_Action" text="Previous Face" textFill="#175710" />
+      <Button fx:id="CancelBtn" layoutX="71.0" layoutY="430.0" mnemonicParsing="false" onAction="#CancelBtn_Action" text="Cancel" textFill="#175710" />
+      <CheckBox fx:id="Green_CheckBox" layoutX="48.0" layoutY="129.0" mnemonicParsing="false" onAction="#GreenCheckBoxAction" text="Green" textFill="#175710" />
+      <CheckBox fx:id="White_CheckBox" layoutX="48.0" layoutY="155.0" mnemonicParsing="false" onAction="#WhiteCheckBoxAction" text="White" textFill="#175710" />
+      <CheckBox fx:id="Blue_CheckBox" layoutX="47.0" layoutY="181.0" mnemonicParsing="false" onAction="#BlueCheckBoxAction" text="Blue" textFill="#175710" />
+      <CheckBox fx:id="Red_CheckBox" layoutX="138.0" layoutY="181.0" mnemonicParsing="false" onAction="#RedCheckBoxAction" text="Red" textFill="#175710" />
+      <CheckBox fx:id="Orange_CheckBox" layoutX="138.0" layoutY="156.0" mnemonicParsing="false" onAction="#OrangeCheckBoxAction" text="Orange" textFill="#175710" />
+      <CheckBox fx:id="Yellow_CheckBox" layoutX="138.0" layoutY="130.0" mnemonicParsing="false" onAction="#YellowCheckBoxAction" text="Yellow" textFill="#175710" />
+      <Button fx:id="Btn3" layoutX="55.0" layoutY="270.0" mnemonicParsing="false" onAction="#Btn3_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Button fx:id="Btn6" layoutX="55.0" layoutY="320.0" mnemonicParsing="false" onAction="#Btn6_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Button fx:id="Btn7" layoutX="111.0" layoutY="321.0" mnemonicParsing="false" onAction="#Btn7_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Button fx:id="Btn4" layoutX="111.0" layoutY="270.0" mnemonicParsing="false" onAction="#Btn4_Action" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #008000;" textFill="#175710" />
+      <Button fx:id="Btn2" layoutX="167.0" layoutY="220.0" mnemonicParsing="false" onAction="#Btn2_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Button fx:id="Btn1" layoutX="111.0" layoutY="220.0" mnemonicParsing="false" onAction="#Btn1_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Button fx:id="Btn5" layoutX="167.0" layoutY="270.0" mnemonicParsing="false" onAction="#Btn5_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Button fx:id="Btn8" layoutX="167.0" layoutY="321.0" mnemonicParsing="false" onAction="#Btn8_Action" prefHeight="40.0" prefWidth="40.0" textFill="#175710" />
+      <Button fx:id="DoneBtn" layoutX="133.0" layoutY="430.0" mnemonicParsing="false" onAction="#DoneBtn_Action" text="Done" textFill="#175710" />
+      <Label fx:id="ThirdInstruction_Label" layoutX="317.0" layoutY="169.0" prefHeight="17.0" prefWidth="294.0" text="3. Input the colors." textFill="#175710" />
+      <Label fx:id="FourthInstruction_Label" layoutX="317.0" layoutY="194.0" text="4. Rotate the cube to your left to get the White side." textFill="#175710" />
+      <Label fx:id="FifthInstruction_Label" layoutX="317.0" layoutY="220.0" text="5. Press Next" textFill="#175710" />
+      <TextArea fx:id="OutputTextArea" layoutX="307.0" layoutY="275.0" prefHeight="311.0" prefWidth="288.0" />
+      <Button fx:id="NextInstructionBtn" layoutX="331.0" layoutY="612.0" mnemonicParsing="false" onAction="#NextInstructionBtn_Action" prefHeight="17.0" prefWidth="113.0" text="Next Instruction" textFill="#175710" />
+      <Button fx:id="FinishBtn" layoutX="467.0" layoutY="612.0" mnemonicParsing="false" onAction="#FinishBtn_Action" text="Finish" textFill="#175710" />
+      <Label layoutX="314.0" layoutY="250.0" text="Instructions to solve Rubik Cube" textFill="#175710">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="299.0" layoutY="243.0" prefHeight="8.0" prefWidth="345.0" />
+      <Label layoutX="31.0" layoutY="547.0" text="Do you want to play again?" textFill="#175710">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ResetBtn" layoutX="105.0" layoutY="586.0" mnemonicParsing="false" onAction="#ResetBtn_Action" text="Reset" textFill="#175710">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
